@@ -1,16 +1,15 @@
 import Foundation
 
-// Exemplo de entrada de texto
 print("Digite um texto para análise:")
 let text = readLine() ?? ""
 
-// Transformar o texto em um array de palavras
+// Transforma o texto em um array de palavras atribuído à variável 'let'
 let words = text.split(separator: " ").map { String($0) }
 
-// Contar o número de palavras
+// Mostra no console o número de palavras
 print("Número de palavras: \(words.count)")
 
-// Buscar uma palavra específica
+// Busca uma palavra específica e diz quantas vezes ela aparece na frase
 print("Digite a palavra que deseja buscar:")
 let searchWord = readLine() ?? ""
 var searchCount = 0
